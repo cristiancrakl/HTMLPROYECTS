@@ -189,16 +189,23 @@ header {
 
     padding-top: 50px;
 
+    text-align: left;
 
 }
 
 .text_cover p {
     margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
 }
 
 .text_cover a {
 
     text-align: center;
+
+    
+   
 }
 
 
@@ -208,16 +215,18 @@ header {
 .btn_text {
 
 
-    padding-top: 50px;
-    display: block;
+    
+    display: flex;
     padding: 8px 50px;
     border: 2px solid var(--color_text-primary);
     border-radius: 8px;
     font-weight: 500;
     color: var(--color_text-tertiary);
     margin: 0px 100px;
-    transition: all 300ms;
+    transition: all 400ms;
+    
 
+    
 
 
 }
@@ -226,6 +235,9 @@ header {
 
     color: var(--background-color);
     background: var(--color_text-primary);
+    
+
+    
 
 
 }
