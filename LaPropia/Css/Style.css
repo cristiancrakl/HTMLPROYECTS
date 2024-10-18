@@ -1,0 +1,244 @@
+:root {
+    /* Define variables CSS para los colores y tamaños de texto */
+    --color_text-primary: #4A0033;
+    /* Un tono vino oscuro para texto primario */
+    --color_text-secundary: #8E005B;
+    /* Un tono de fucsia oscuro para texto secundario */
+    --color_text-tertiary: #CC6699;
+    /* Un tono rosado más claro para texto terciario */
+    --main_color-primary: #FF66B2;
+    /* Rosado brillante como color principal */
+    --main_color-secundary: #FFB3D9;
+    /* Un tono rosado pastel como color secundario */
+    --background-color: #FFE6F0;
+    /* Fondo en un tono rosa muy suave */
+    --lowText_font_size: 16px;
+    /* Tamaño de fuente para texto pequeño */
+    --text_size_title: 40px;
+    /* Tamaño de fuente para títulos */
+    --text_title_card: 24px;
+    /* Tamaño de fuente para títulos de tarjeta */
+    --text_title_cardv2: 20px;
+    /* Tamaño de fuente para subtítulos de tarjeta */
+    --text_paragraph: 16px;
+    /* Tamaño de fuente para párrafos */
+    --box_shadow-primary: rgba(204, 0, 102, 0.5);
+    /* Un tono fucsia oscuro con opacidad para un efecto suave */
+
+    /* Sombra principal */
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*inicio header*/
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    /*Esta propiedad permite que el elemento header este fijo en nuestra página*/
+    z-index: 100;
+    /*Esta propiedad permite que el elemento header se sueprponga a otros elementos en nuestra página*/
+}
+
+.contenedor_header {
+    background-color: var(--main_color-secundary);
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+/*inicio logo*/
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: var(--main_color-secundary);
+
+}
+
+
+
+.logo img {
+
+    width: 90px;
+    height: 90px;
+
+
+
+}
+
+/*fin logo*/
+
+/*inicio menu principal*/
+.Menu_Principal {
+
+    display: flex;
+    align-items: center;
+    background-color: var(--main_color-secundary);
+    transition: background-color 0.3s ease;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+
+}
+
+.Menu_Principal nav {
+
+    margin: 0px 20px;
+
+}
+
+.Menu_Principal nav ul {
+
+    display: flex;
+
+}
+
+.Menu_Principal nav ul li {
+    list-style: none;
+    margin: 20px 16px;
+
+
+}
+
+.Menu_Principal nav ul li a {
+
+    color: var(--color_text-secundary);
+    font-size: var(--lowText_font_size);
+    position: relative;
+
+
+
+}
+
+/*fin menu principal*/
+
+
+/*Boton iniciar*/
+.Boton_iniciar {
+
+    display: block;
+    padding: 8px 40px;
+    border: 2px solid var(--color_text-primary);
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color_text-secundary);
+    margin: 0px 20px;
+    transition: all 300ms;
+
+}
+
+.Boton_iniciar:hover {
+    color: var(--background-color);
+    background: var(--color_text-tertiary);
+}
+
+/*fin boton iniciar*/
+
+
+/*redes sociales*/
+.Menu_Principal .Redes_Sociales {
+    margin: 0px 30px;
+}
+
+.Menu_Principal .Redes_Sociales a {
+    margin: 0px 4px;
+}
+
+.Menu_Principal .Redes_Sociales img {
+    width: 30px;
+    height: 25px;
+
+}
+
+/*fin redes sociales*/
+
+/*fin header*/
+
+
+/*inicio portada*/
+
+.Contenedor_Portada {
+
+    /*añade un relleno (padding) en la parte superior e inferior de 100px*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--main_color-secundary);
+}
+
+.Portada {
+
+    /*limita el ancho del contenedor a 1200px*/
+    max-width: 1200px;
+
+    /*centra horizontalmente el contenedor dentro d esu padre*/
+    margin: auto;
+
+    /*añade un margen superior de 100px para separar el contenido anterior*/
+    margin-top: 100px;
+
+    /*usa flexbox para alinear los elementos hijos*/
+    display: flex;
+
+    /*alinea*/
+    align-items: center;
+
+    /*añade un relleno lateral de 20px para dar espacio interno*/
+    padding: 0px 20px;
+
+}
+
+.Texto_Portada {
+
+
+    padding-top: 20px;
+
+    /*ocupa el 100% del ancho disponible*/
+    width: 100%;
+
+
+    padding-right: 150px;
+
+}
+
+.Texto_Portada h1 {
+
+
+    /*establece un tamaño de fuente grande para el titulo */
+    font-size: 50px;
+
+    /*aplicar un color al texto definido por la variable --color_text-tertiary */
+    color: var(--color_text-tertiary);
+
+    padding-top: 50px;
+
+    text-align: left;
+
+}
+
+.Texto_Portada p {
+
+
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    display: flex;
+
+}
+
+.Texto_Portada a{
+    text-align: center;
+}
