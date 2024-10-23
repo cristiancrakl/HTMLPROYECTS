@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +10,70 @@
 
 
 </head>
+
 <body>
-    <h1>estamos listo </h1>
-
-
-    <a href="Img/logo.jpg" download>Descargar documento</a>
-
-    
 
 
 
+    <script>
+
+        console.log("hola mundo");
+        document.write("hola mundo");
+
+        var variableglobal = "Soy una variable global";
+
+        function miFuncion() {
+
+            var variablelocal = "Soy una variable local";
+            console.log(variableglobal);
+            console.log(variablelocal)
+        }
+
+        miFuncion(); // Salida: Soy una variable local
+
+        let nombre = "cristian"
+        let saludo = "hola " + nombre + " como estas?"
+
+        console.log(nombre);
+        console.log(saludo);
+
+        let persona = {
+
+            nombre: "danna",
+            edad: 20,
+            esEstudiante: true
+
+        };
+
+        let array = [1, 2, 3, 4, 5];
+        console.log(array)
+
+        let edad = 20;
+        let mensaje = (edad >= 18) ? "es mayor de edad" : "es menor de edad";
+        console.log(mensaje)
 
 
-    
+        //para sacar cosas de objetos para mostrar
+        let potencia = (2 ** 2);
+        console.log(potencia);
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
