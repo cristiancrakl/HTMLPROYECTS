@@ -239,6 +239,224 @@ header {
 
 }
 
-.Texto_Portada a{
+.Texto_Portada a {
     text-align: center;
+}
+
+.botonMain {
+
+
+    margin: auto;
+    padding: 8px 50px;
+    border: 2px solid var(--color_text-primary);
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--color_text-tertiary);
+    transition: all 400ms;
+
+}
+
+.botonMain:hover {
+    color: var(--background-color);
+    background: var(--color_text-tertiary);
+}
+
+.container_box-cardPrimary {
+
+
+    margin: auto;
+
+    display: flex;
+
+    padding: 0px 20px;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+
+
+
+}
+
+
+
+.container_card-primary {
+
+    padding-top: 100px;
+    max-height: 100%;
+    padding-bottom: 60px;
+
+
+
+}
+
+.card_primary {
+
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+
+
+}
+
+.text_card-primary {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.text_card-primary p {
+    color: var(--color_text-primary);
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+
+}
+
+.text_card-primary h1 {
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+
+}
+
+.box-cardprimary h2 {
+
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+
+
+/*inicio cover 3parte de la pagina 2*/
+.container_about {
+
+    /*añade un relleno (padding) en la parte superior e inferior de 100px*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: var(--background-color);
+}
+
+.about {
+
+    /*limita el ancho del contenedor a 1200px*/
+    max-width: 1200px;
+
+    /*centra horizontalmente el contenedor dentro d esu padre*/
+    margin: auto;
+
+    /*añade un margen superior de 100px para separar el contenido anterior*/
+    margin-top: 100px;
+
+    /*usa flexbox para alinear los elementos hijos*/
+    display: flex;
+
+    /*alinea*/
+    align-items: center;
+
+    /*añade un relleno lateral de 20px para dar espacio interno*/
+    padding: 0px 20px;
+
+}
+
+.text_about {
+
+    padding-top: 20px;
+
+    /*ocupa el 100% del ancho disponible*/
+    width: 100%;
+
+
+    padding-right: 150px;
+}
+
+.text_about h1 {
+
+    /*establece un tamaño de fuente grande para el titulo */
+    font-size: 30px;
+
+    /*aplicar un color al texto definido por la variable --color_text-tertiary */
+    color: var(--color_text-secundary);
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: left;
+
+}
+
+.text_about p {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    display: flex;
+    max-width: 100%;
+}
+
+.text_about a {
+
+    text-align: center;
+
+
+
+}
+
+
+
+.image_about {
+    width: 100%;
+
+
+}
+
+.image_about2 {
+    width: 100%;
+
+
+}
+
+.image_about img {
+    width: 300px;
+    border-radius: 20px;
+    padding: right 20px;
+    height: 300px;
+
+
+
+}
+
+.image_about2 img {
+    width: 300px;
+    border-radius: 20px;
+    padding: right 20px;
+    height: 300px;
+
+
+
+}
+
+.btn_about {
+
+
+
+    
+    padding: 8px 40px;
+    border: 2px solid var(--color_text-primary);
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--color_text-tertiary);
+    margin: auto;
+    transition: all 400ms;
+
+
+}
+
+
+
+.btn_about:hover {
+    color: var(--background-color);
+    background: var(--color_text-primary);
 }
