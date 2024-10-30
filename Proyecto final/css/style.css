@@ -43,8 +43,7 @@
 header {
     width: 100%;
     height: 100px;
-    position: fixed;
-    z-index: 100;
+   background-color: var(--background-color);
 }
 
 .container_header {
@@ -341,6 +340,7 @@ header {
     align-items: center;
 }
 
+
 .card__proyect {
     width: 300px;
     height: 300px;
@@ -367,15 +367,18 @@ header {
 
 .Formulario_contact {
     padding-top: 50px;
-    padding-bottom: 50px;
-    display: flex;
+    padding-bottom: 100px;
     justify-content: center;
     /* Centra horizontalmente */
     align-items: center;
     /* Centra verticalmente */
-    min-height: 100vh;
+    min-height: 500px;
     /* Asegura que ocupe toda la altura de la pantalla */
+    margin: auto;
+    align-items: center;
+    max-width: 1200px;
 }
+
 
 .Title_formulario {
     text-align: center;
@@ -383,6 +386,15 @@ header {
     margin-bottom: 20px;
     /* Espacio entre el título y el formulario */
     margin-right: 50px;
+}
+
+.formflex {
+    display: flex;
+}
+
+.formflex img {
+    padding-right: 400px;
+    height: 300px;
 }
 
 form {
@@ -397,6 +409,9 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+.card__proyect {
+    background-color: #8E005B;
 }
 
 input,
@@ -419,4 +434,81 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.mapa {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    min-height: 500px;
+    /* Asegura que ocupe toda la altura de la pantalla */
+    display: flex;
+    
+
+
+    background-color: var(--background-color);
+
+
+}
+
+.footer{
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background: var(--background-color);
+    border-top: var(--color_text-secundary) solid 5px;
+}
+
+.footer_conatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 30px 20px;
+}
+
+.logo_information{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 0;
+}
+
+.logo_information img{
+    width: 200 px;
+}
+
+#footer_input{
+    width: 500px;
+    padding: 10px; 
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.link_information ul{
+    list-style-type: none;
+}
+
+.link_information p{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color:var(--main_color-primary);
+    
+}
+
+.link_information li{
+    margin-top: 20px;
+}
+
+.link_information a{
+    color: var(--color_text-secundary);
+    font-size: 18px;
+}
+
+.link_information a:hover{
+    color: var(--color_text-primary);
 }
